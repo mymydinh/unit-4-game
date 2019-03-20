@@ -9,7 +9,7 @@ $(".comp-number").text(compRandom);
 var numCounter = 0;
 var win = 0;
 var lose = 0;
-
+var newCompRandom = 0;
 
 // RANDOMLY GENERATED NUMBER BETWEEN 1-12
 var jewelRandom = [Math.floor(Math.random() * 12)];
@@ -79,16 +79,16 @@ $(".jewels").on("click", function () {
 
 
     // WIN/LOSE LOGIC
-    if (numCounter == compRandom) {
+    if (numCounter == compRandom ) {
         win++;
     } else if (numCounter > compRandom) {
         lose++;
 
         numCounter = 0;
-        var newCompRandom = [19 + Math.floor(Math.random() * 101)];
-        $(".comp-number").text(newCompRandom);
-
+        compRandom = [19 + Math.floor(Math.random() * 101)];
+        $(".comp-number").text(compRandom);
     }
+
 
     // INPUTTING IN HTML
     $(".score-number").text(numCounter);
