@@ -1,0 +1,110 @@
+body {
+    background-image: url(../images/background.jpg);
+    background-position: repeat;
+}
+
+h1 {
+    background-color: #a2798f;
+    font-size: 36px;
+    color: white;
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.body {
+    width: 500px;
+}
+
+.rules {
+    margin: 10px;
+    padding: 10px;
+    background-color: #d7c6cf;
+    color: #8caba8;
+    font-size: 16px;
+    width: 100%;
+    font-weight: bold;
+}
+
+
+
+.comp-number {
+    margin: 10px;
+    padding: 10px;
+    background-color: #8caba8;
+    color: #fff;
+    font-size: 36px;
+    width: 300px;
+    font-weight: bold;
+    float: left;
+    height: 100px;
+}
+
+.total-score {
+    margin: 10px 0px 10px 10px;
+    padding: 10px 0px 10px 10px;
+    background-color: #8caba8;
+    color: #ebdada;
+    font-size: 16px;
+    float: right;
+    height: 100px;
+    width: 140px;
+}
+
+.images-container {
+    clear: both;
+    padding: 10px;
+    width: 100%;
+}
+
+#images img {
+    width: 20%;
+    margin: 5px;
+    border-radius: 50px;
+}
+
+
+#images img:active {
+    cursor: pointer;
+    border: 1px solid #a2798f;
+}
+
+.user-score {
+    margin: 10px;
+    padding: 10px;
+    background-color: #a2798f;
+    color:	#ebdada;
+    font-size: 16px;
+    width: 100%;
+}
+
+
+
+.score-number {
+    margin: 10px;
+    padding: 10px;
+    background-color: #a2798f;
+    color: #fff;
+    font-size: 36px;
+    width: 100%;
+    font-weight: bold;
+    height: 100px;
+}
+
+.restart {
+    margin: 10px;
+    padding: 10px;
+    background-color: #ebdada;
+    width: 100%;
+}
+
+button {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ebdada;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    border:#ebdada;
+}
