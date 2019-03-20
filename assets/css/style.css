@@ -61,9 +61,14 @@ h1 {
 #images img {
     width: 20%;
     margin: 5px;
+    border-radius: 50px;
 }
 
 
+#images img:active {
+    cursor: pointer;
+    border: 1px solid #a2798f;
+}
 
 .user-score {
     margin: 10px;

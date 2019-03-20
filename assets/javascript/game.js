@@ -18,12 +18,12 @@ var jewelRandom = [Math.floor(Math.random() * 12)];
 // FIRST JEWEL WITH ITS RANDOM VALUE
 for (var i = 0; i < jewelRandom.length; i++) {
 
-    var imageJewel = $("<img>");
+    var jewelImage = $("<img>");
 
-    imageJewel.addClass("jewels");
-    imageJewel.attr("src", "assets/images/green-jewel.jpg");
-    imageJewel.attr("jewelvalue", jewelRandom[i]);
-    $("#images").append(imageJewel);
+    jewelImage.addClass("jewels");
+    jewelImage.attr("src", "assets/images/green-jewel.jpg");
+    jewelImage.attr("jewelvalue", jewelRandom[i]);
+    $("#images").append(jewelImage);
 }
 
 // SECOND JEWEL WITH ITS RANDOM VALUE
@@ -31,12 +31,12 @@ var jewelRandom = [Math.floor(Math.random() * 12)];
 
 for (var i = 0; i < jewelRandom.length; i++) {
 
-    var imageJewel = $("<img>");
+    var jewelImage = $("<img>");
 
-    imageJewel.addClass("jewels");
-    imageJewel.attr("src", "assets/images/orange-jewel.jpg");
-    imageJewel.attr("jewelvalue", jewelRandom[i]);
-    $("#images").append(imageJewel);
+    jewelImage.addClass("jewels");
+    jewelImage.attr("src", "assets/images/orange-jewel.jpg");
+    jewelImage.attr("jewelvalue", jewelRandom[i]);
+    $("#images").append(jewelImage);
 }
 
 // THIRD JEWEL WITH ITS RANDOM VALUE
@@ -44,12 +44,12 @@ var jewelRandom = [Math.floor(Math.random() * 12)];
 
 for (var i = 0; i < jewelRandom.length; i++) {
 
-    var imageJewel = $("<img>");
+    var jewelImage = $("<img>");
 
-    imageJewel.addClass("jewels");
-    imageJewel.attr("src", "assets/images/red-jewel.jpg");
-    imageJewel.attr("jewelvalue", jewelRandom[i]);
-    $("#images").append(imageJewel);
+    jewelImage.addClass("jewels");
+    jewelImage.attr("src", "assets/images/red-jewel.jpg");
+    jewelImage.attr("jewelvalue", jewelRandom[i]);
+    $("#images").append(jewelImage);
 }
 
 // FOURTH JEWEL WITH ITS RANDOM VALUE
@@ -57,12 +57,12 @@ var jewelRandom = [Math.floor(Math.random() * 12)];
 
 for (var i = 0; i < jewelRandom.length; i++) {
 
-    var imageJewel = $("<img>");
+    var jewelImage = $("<img>");
 
-    imageJewel.addClass("jewels");
-    imageJewel.attr("src", "assets/images/turquoise-jewel.jpg");
-    imageJewel.attr("jewelvalue", jewelRandom[i]);
-    $("#images").append(imageJewel);
+    jewelImage.addClass("jewels");
+    jewelImage.attr("src", "assets/images/turquoise-jewel.jpg");
+    jewelImage.attr("jewelvalue", jewelRandom[i]);
+    $("#images").append(jewelImage);
 }
 
 
