@@ -22,7 +22,7 @@ for (var i = 0; i < jewelRandom.length; i++) {
 
     jewelImage.addClass("jewels");
     jewelImage.attr("src", "assets/images/green-jewel.jpg");
-    jewelImage.attr("jewelvalue", jewelRandom[i]);
+    jewelImage.attr("jewelValue", jewelRandom[i]);
     $("#images").append(jewelImage);
 }
 
@@ -35,7 +35,7 @@ for (var i = 0; i < jewelRandom.length; i++) {
 
     jewelImage.addClass("jewels");
     jewelImage.attr("src", "assets/images/orange-jewel.jpg");
-    jewelImage.attr("jewelvalue", jewelRandom[i]);
+    jewelImage.attr("jewelValue", jewelRandom[i]);
     $("#images").append(jewelImage);
 }
 
@@ -48,7 +48,7 @@ for (var i = 0; i < jewelRandom.length; i++) {
 
     jewelImage.addClass("jewels");
     jewelImage.attr("src", "assets/images/red-jewel.jpg");
-    jewelImage.attr("jewelvalue", jewelRandom[i]);
+    jewelImage.attr("jewelValue", jewelRandom[i]);
     $("#images").append(jewelImage);
 }
 
@@ -61,7 +61,7 @@ for (var i = 0; i < jewelRandom.length; i++) {
 
     jewelImage.addClass("jewels");
     jewelImage.attr("src", "assets/images/turquoise-jewel.jpg");
-    jewelImage.attr("jewelvalue", jewelRandom[i]);
+    jewelImage.attr("jewelValue", jewelRandom[i]);
     $("#images").append(jewelImage);
 }
 
@@ -69,7 +69,7 @@ for (var i = 0; i < jewelRandom.length; i++) {
 
 // WHEN JEWELS GET CLICKED ON
 $(".jewels").on("click", function () {
-    var jewelValue = ($(this).attr("jewelvalue"));
+    var jewelValue = ($(this).attr("jewelValue"));
     jewelValue = parseInt(jewelValue);
 
 
@@ -83,6 +83,11 @@ $(".jewels").on("click", function () {
         win++;
     } else if (numCounter > compRandom) {
         lose++;
+
+        numCounter = 0;
+        var newCompRandom = [19 + Math.floor(Math.random() * 101)];
+        $(".comp-number").text(newCompRandom);
+
     }
 
     // INPUTTING IN HTML
